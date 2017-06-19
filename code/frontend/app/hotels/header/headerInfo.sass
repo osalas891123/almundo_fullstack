@@ -1,0 +1,30 @@
+.searchheaderInfo
+  width: 100%
+  .searchbox
+    margin: 4px 0px
+    @media only screen and (min-width : 1024px)
+      padding: 8px 2px
+    border: 1px solid #ababab
+    box-sizing: border-box
+    .header
+      p
+        color: $amGray
+        font-weight: normal
+        @media only screen and (min-width : 1024px)
+          padding: 0px 10px
+          font-size: 20px
+    .content
+      display: block
+      padding: 0px 10px
+      @media only screen and (min-width: 1024px)
+        display: inline-flex
+      p
+        color: $amGray
+        @media only screen and (min-width : 1024px)
+          font-size: 12px
+          padding: 0px 10px
+      a
+        color: $amLinkBlue
+        transition: color 1s ease
+        &:hover
+          color: $amLinkHoverBlue

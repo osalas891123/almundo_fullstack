@@ -1,0 +1,58 @@
+.sliders
+  position: relative
+  height: 100%
+  width: 100%
+  .items-ctn
+    background-color: $backgroundRecommend
+    width: 100%
+    height: 100%
+    justify-content: center
+    padding: 0px
+    li
+      .image
+        width: 100%
+        overflow: hidden
+        height: 200px
+        padding: 0px
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+  .nav-ctn
+    position: absolute
+    width: 100%
+    top: 50%
+    left: 0
+    li
+      z-index: 1
+      position: absolute
+      cursor: pointer
+      font-size: 18px
+      &.prev
+        padding: 0px 8px
+        left: 0
+        position: absolute
+        z-index: 1
+        top: calc(50% - 12px)
+        background-color: white
+        border-radius: 50%
+        color: $backgroundRecommend
+        font-size: 18px
+        left: 8px
+        transition: color, background-color 1s ease
+        &:hover
+          color: white
+          background-color: $backgroundRecommend
+      &.next
+        padding: 0px 8px
+        right: 8px
+        position: absolute
+        z-index: 1
+        color: $backgroundRecommend
+        top: calc(50% - 12px)
+        background-color: white
+        border-radius: 50%
+        font-size: 18px
+        transition: color, background-color 1s ease
+        &:hover
+          color: white
+          background-color: $backgroundRecommend

@@ -1,0 +1,22 @@
+{
+  "name": "almundo_fullstack",
+  "authors": [
+    "Omar Salas <o.salas891123@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "code/frontend/vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^v1.6.4"
+  }
+}

@@ -1,0 +1,30 @@
+.cluster
+    .sliderdiv
+        div.saleMessage(ng-show="$ctrl.item.price > 3000")
+            p.recomendado ¡Hotel Recomendado!
+        div.offerMessage(ng-show="$ctrl.item.price < 2000") <span class="oferta">30%<br/>OFF</span>
+            
+             
+        slider-component(items="$ctrl.item.images")
+    .details
+        a.nameHotelDetails(href="#")
+            h2 {{$ctrl.item.name}}
+        a.starsDetails(ng-repeat = ("star in $ctrl.stars() track by $index")) <i class="fa fa-star" aria-hidden="true"></i>
+        h3 <i class="fa fa-bed" aria-hidden="true"></i> {{$ctrl.item.descrip}}
+        ul.amenitiesShow
+            li(ng-repeat="(key, value) in $ctrl.item.amenities" ng-class="$ctrl.getIcon(key)")
+        .deta
+            ul.tripsDetails(ng-show="$ctrl.item.price > 5000")
+                li
+                    img(width="80" src="//static.almundo.com/img/logos/tripadvisor/4.0.svg" data-ng-src="//static.almundo.com/img/logos/tripadvisor/4.0.svg" alt="trip")
+                li
+                    p.countTrips {{$ctrl.item.trips}} opiniones
+    .pricebox
+        p Precio por noche por habitación
+        .price <span class="number">{{$ctrl.item.price | currency:"ARS":0 | comma2dot}}</span>
+        <br/>
+        p Impuestos y tasas no incluidos
+        a(href='#' target="new_blank")
+            button Ver hotel
+        p.payMethod Pagá en coutas o en destino.
+

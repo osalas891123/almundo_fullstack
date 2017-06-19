@@ -1,0 +1,68 @@
+.filternight
+  ul
+    padding: 0px
+    list-style-type: none
+  .filterPriceHotel
+    box-shadow: 0px 1px 3px 0px rgba(119, 119, 119, 0.3)
+    background-color: white
+    margin-bottom: -4px
+    .filterheader
+      h5
+        padding: 12px
+        font-size: 14px
+        font-family: Roboto, sans-serif
+        font-weight: bold
+        line-height: 16px
+        color: $amLinkBlue
+        transition: color 1s ease
+        &:hover
+          color: $amLinkHoverBlue
+        .fa-usd
+          margin-right: 12px
+        .fa-sort-asc
+          float: right
+        .fa-sort-desc
+          float: right
+    .filtercontainer
+      padding: 0px 16px 8px 16px
+      .angularjsslider
+      .rzslider
+        margin-top: 8px
+        .rz-limit
+          display: none
+        .rz-bar
+          background: $amDarkGray
+          height: 5px
+        .rz-pointer
+          text-decoration: none
+          width: 16px
+          height: 32px
+          top: auto
+          bottom: -16px
+          background-color: #FFFFFF
+          border: 1px solid $amDarkGray
+          border-radius: 10px
+        .rz-pointer-min
+        .rz-pointer-max
+        .rz-pointer-min::after
+          display: none
+        .rz-pointer-max::after
+          display: none
+    .containOutputs
+      display: flex
+      justify-content: space-between
+      p
+        color: $amDarkGray
+        width: 100%
+        font-weight: bold
+        flex: 1 1 auto
+        display: inline-block
+        margin: 2px 10px 6px 8px
+      .rightOut
+        text-align: right
+      .leftOut
+        text-align: left
+.rzslider .rz-bubble
+  padding: 1px 3px
+  cursor: default
+  display: none
